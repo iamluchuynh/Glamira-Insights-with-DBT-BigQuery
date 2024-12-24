@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: L1_Staging
+    database: transform-data-440803 
+    schema: Glamira_Customer_Behavior_L1_Staging
+    tables:
+      - name: checkout_success
+        description: 'Get the necessary data columns for transformation.'

@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: L2_Transform
+    database: transform-data-440803 
+    schema: Glamira_Customer_Behavior_L2_Transform
+    tables:
+      - name: fact_orders
+        description: 'Fact table for user orders.'
+      - name: dim_location
+        description: 'Mapping IP to Location in details.'
+      - name: dim_date
+        description: 'Extract timestamp into day, month, year'
+      - name: dim_product
+        description: 'product_name and product_id'
+      - name: dim_currency
+        description: 'Exchange different type of currencies in order to calculate the total_revenue'

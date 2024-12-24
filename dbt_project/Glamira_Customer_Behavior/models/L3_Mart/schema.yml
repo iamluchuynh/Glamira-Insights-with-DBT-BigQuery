@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: L3_Mart
+    database: transform-data-440803 
+    schema: Glamira_Customer_Behavior_L3_Mart
+    tables:
+      - name: product_with_most_revenue
+        description: 'Which products (product_name) generate the most revenue?'
+      - name: sales_across_different_countries
+        description: 'How are sales distributed across different countries (country_name)?'
+      - name: sales_in_week_in_year
+        description: 'What are sales trends for different weeks within a year?'
+      - name: total_sales_over_time
+        description: 'How do the total sales (line_total) trend over different months and years?'
